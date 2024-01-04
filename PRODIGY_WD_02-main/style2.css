@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.hh{
+    position: absolute;
+    top: 10%;
+    color: white;
+}
+
+body {
+    overflow: visible;
+    background-color: whitesmoke; 
+}
+
+.watch-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.container {
+    display: flex;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 37vh;
+    width: 89vw; 
+    justify-content: center;
+    align-items: center;
+    animation: containerFadeIn 1.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.container span {
+    color: white;
+    font-size: 8vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: color 0.5s ease; 
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 20px; 
+    justify-content: center;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: grey; 
+    color: white;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem; 
+    transition: background-color 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: whitesmoke; 
+    color: #555;
+    font-size: 1.26rem;
+}
+
+.laps-container {
+    position: absolute;
+    left: 25%;
+    margin-top: 20px;
+    height: 300px;
+    overflow-y: auto;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.lap-item {
+    padding: 10px;
+    margin: 12px;
+    background-color: grey;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lap-number {
+    font-size: 1.2em;
+    margin-right: 15px;
+    color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90vw; 
+    }
+
+    .container span {
+        font-size: 12vw;
+    }
+
+    .btn {
+        margin-top: 10px; 
+        margin-bottom: -10px; 
+    }
+
+    button {
+        width: 100px; 
+        font-size: 1rem; 
+    }
+
+    .laps-container {
+        width: 90%;
+        left: 5%;
+    }
+}
